@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+  <title>Etales - Create and Share</title>
+  <link href="app/styles/bootstrap.css" rel="stylesheet">
+  <link href="app/styles/bootstrap.file-input.css" rel="stylesheet">
+ </head>
+
+<body ng-controller="NavbarCtrl">
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/">Etales</a>
+    <ul class="nav">
+        <li class="active" > <a href="/">Home</a></li>
+        <li ><a href="#">User Info</a></li>
+        <li ><a href="#">Log out</a></li>
+    </ul>
+    <ul class="nav pull-right">
+        <li>
+        	<a href="#">Login</a>
+        </li>      
+    </ul>
+  </div> 
+</div>
+
+
+<div class="container">
+	<form class="form-horizontal" enctype="multipart/form-data" method="post" action="http://localhost:8888/upload">
+	  <fieldset>
+	    <legend>Upload</legend>
+	    <div class="control-group">
+			<input type="file" class="custom-file-input" multiple="multiple" name="upload">
+			<button class="btn btn-primary start" type="submit">
+				<i class="icon-upload icon-white"></i>
+				<span>Start upload</span>
+			</button>
+	    </div>
+	  </fieldset>
+	</form>
+</div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <script src="app/styles/bootstrap.min.js"></script>
+  <script src="app/scripts/vendor/bootstrap.file-input.js"></script>
+</body>
+</html>
+
+
+  
+
+

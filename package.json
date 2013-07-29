@@ -1,0 +1,20 @@
+{
+    "name": "PAS",
+    "description": "Personalilty Analysis System Application",
+    "version": "0.0.1",
+    "private": true,
+	 "dependencies": {
+	    "express": "*",
+	    "mongoose":"*",
+	    "formidable":"*"
+	 },
+    "devDependencies": {
+        "mocha":">= 1.9.0",
+        "should":"*",
+        "supertest":"*",
+        "karma":"*"
+    },
+    "scripts": {
+        "start": "node index.js"
+    }
+}
